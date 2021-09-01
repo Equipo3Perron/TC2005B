@@ -1,0 +1,58 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("images/fondos/fondo juego.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Roboto;
+}
+
+.header {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 1rem;
+    margin: 0 12.5%;
+}
+
+.logo {
+    height: 40px;
+    background-color: white;
+    border: 2px solid white;
+}
+
+.menu {
+    display: flex;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.menu li {
+    margin: 1rem 2rem;
+    padding: .7rem 1.5rem;
+    border-radius: 15%/40%;
+    background-color: rgba(255, 51, 0, 0.89);
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.game-container {
+    width: 100%;
+    display: flex;
+}
+
+.game-screen { 
+    margin: auto;
+    width: 70%;
+}
