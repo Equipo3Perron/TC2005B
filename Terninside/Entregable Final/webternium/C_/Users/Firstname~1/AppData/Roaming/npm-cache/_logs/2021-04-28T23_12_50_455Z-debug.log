@@ -1,0 +1,15 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'start' ]
+2 info using npm@6.14.11
+3 info using node@v14.15.5
+4 verbose run-script [ 'prestart', 'start', 'poststart' ]
+5 info lifecycle webternium@0.1.0~prestart: webternium@0.1.0
+6 info lifecycle webternium@0.1.0~start: webternium@0.1.0
+7 verbose lifecycle webternium@0.1.0~start: unsafe-perm in lifecycle true
+8 verbose lifecycle webternium@0.1.0~start: PATH: /usr/local/lib/node_modules/npm/node_modules/npm-lifecycle/node-gyp-bin:/Users/silvestregarcia/Downloads/MTY.TC2005B.10.2111.39264-main/webternium/node_modules/.bin:/Library/Frameworks/Python.framework/Versions/3.7/bin:/Applications/rar:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Library/Frameworks/Python.framework/Versions/3.7/bin
+9 verbose lifecycle webternium@0.1.0~start: CWD: /Users/silvestregarcia/Downloads/MTY.TC2005B.10.2111.39264-main/webternium
+10 silly lifecycle webternium@0.1.0~start: Args: [ '-c', 'react-scripts start' ]
+11 timing npm Completed in 240309ms
+12 error cb() never called!
+13 error This is an error with npm itself. Please report this error at:
+14 error <https://npm.community>
