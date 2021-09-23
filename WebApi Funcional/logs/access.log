@@ -3646,3 +3646,7 @@
 ::ffff:127.0.0.1 - - [23/Sep/2021:17:40:03 +0000] "GET / HTTP/1.1" 404 139 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:92.0) Gecko/20100101 Firefox/92.0"
 ::ffff:127.0.0.1 - - [23/Sep/2021:17:40:16 +0000] "GET / HTTP/1.1" 404 139 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:92.0) Gecko/20100101 Firefox/92.0"
 ::1 - - [23/Sep/2021:17:41:51 +0000] "GET /test HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.54 Safari/537.36"
+::ffff:127.0.0.1 - - [23/Sep/2021:17:45:25 +0000] "GET /test HTTP/1.1" 200 2 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:92.0) Gecko/20100101 Firefox/92.0"
+::ffff:127.0.0.1 - - [23/Sep/2021:17:45:29 +0000] "GET /test HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:92.0) Gecko/20100101 Firefox/92.0"
+::ffff:127.0.0.1 - - [23/Sep/2021:17:45:30 +0000] "GET /test HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:92.0) Gecko/20100101 Firefox/92.0"
+::ffff:127.0.0.1 - - [23/Sep/2021:17:45:49 +0000] "GET /test HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:92.0) Gecko/20100101 Firefox/92.0"
