@@ -1,8 +1,0 @@
-{
-    "appService.zipIgnorePattern": [
-        "node_modules{,/**}",
-        ".vscode{,/**}"
-    ],
-    "appService.defaultWebAppToDeploy": "/subscriptions/01a85dd7-ae99-4d77-b86f-9ea10a9ad7e2/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/TerniumEquipo2",
-    "appService.deploySubpath": ""
-}
