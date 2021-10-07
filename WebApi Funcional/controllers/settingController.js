@@ -54,6 +54,7 @@ class MainController {
                 res.send('Todos los campos son obligadorios!')
             }
         } catch (error) {
+            console.log("echele mas ganas, no jala esta wea")
             res.status(500)
             res.send(error.message)
         }

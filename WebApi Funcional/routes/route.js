@@ -44,7 +44,8 @@ router.delete('/api/deleteBuilding/:playerID/:buildingGameID', buildingControlle
 //setting
 router.get('/api/getSetting/:id', settingController.getSetting);
 router.put('/api/updateSetting/:id', settingController.updateSetting);
-router.post('/api/addSetting', settingController.addSetting);
+//Cambie de post a put
+router.put('/api/addSetting', settingController.addSetting);
 //friends
 router.get('/api/checkFriendUpdate/:id', friendController.checkUpdateFriend);
 router.get('/api/getFriend/:id', friendController.getFriend);
@@ -64,20 +65,19 @@ router.get('/api/deleteTrade/:id/:playerToTradeID', tradeController.deleteTrade)
 //STATISTIC NUEVO
 router.get('/api/newStatistic/:id/:inputTransform', statisticController.newStatistic);
 
-//Pruba query (Agregado ayuda de Martin Palomares)
+//Prueba query (Agregado ayuda de Martin Palomares)
 router.get("/test", async (request, res) => {
     try {
         const pool = await poolPromise
         const result = await pool.request()
             .query(`
-            SELECT * FROM Building;
+            SELECT * FROM Player;
             `)
         res.send(result.recordset)
     } catch (error) {
         console.log(error)
         res.status(500)
         res.send(error.message)
-
     }
 })
 

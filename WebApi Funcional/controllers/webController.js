@@ -53,6 +53,7 @@ class MainController {
         res.send('Por favor llena todos los datos!');
       }
     } catch (error) {
+      console.log(error);
       res.status(500);
       res.send(error.message);
     }

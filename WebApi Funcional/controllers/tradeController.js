@@ -10,6 +10,7 @@ class MainController {
             .query("EXECUTE SPGetTrade @playerID")
             res.json(result.recordset)
         } catch (error) {
+            console.log(error)
             res.status(500)
             res.send(error.message)
         }
