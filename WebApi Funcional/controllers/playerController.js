@@ -30,7 +30,7 @@ class MainController {
             .input('scoreIron',sql.Int, req.body.scoreIron)
             .input('scoreUnpackageSteel',sql.Int, req.body.scoreUnpackageSteel)
             .input('scoreSteel',sql.Int, req.body.scoreSteel)
-            .query("insert into [dbo].[Player] values(@IDJugador, @experiencePlayer, @playerName, @scoreMoney, @scoreIron, @scoreUnpackageSteel, @scoreSteel, @difficulty)")
+            .query("insert into [dbo].[Player] values(@IDJugador, @experiencePlayer, @playerName, @scoreMoney, @scoreIron, @scoreUnpackageSteel, @scoreSteel, @difficulty,True)")
             res.json(result)
             } else {
                 res.send('Por favor llena todos los datos!')
@@ -52,8 +52,9 @@ class MainController {
                 .input('scoreIron',sql.Float , req.body.scoreIron)
                 .input('scoreUnpackageSteel',sql.Float, req.body.scoreUnpackageSteel)
                 .input('scoreSteel',sql.Float, req.body.scoreSteel)
-                .input('difficulty',sql.Int, req.body.difficulty)          
-                .query("EXECUTE SPUpdatePlayer @playerID, @playerExperience, @playerName, @scoreMoney, @scoreIron, @scoreUnpackageSteel, @scoreSteel,@difficulty")
+                .input('difficulty',sql.Int, req.body.difficulty)
+                .input('tutorial',sql.Bit, req.body.difficulty)   
+                .query("EXECUTE SPUpdatePlayer @playerID, @playerExperience, @playerName, @scoreMoney, @scoreIron, @scoreUnpackageSteel, @scoreSteel,@difficulty,@tutorial")
                 res.json(result)
             } else {
                 res.send('Todos los campos obligatorios!')
