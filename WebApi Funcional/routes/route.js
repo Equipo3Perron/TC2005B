@@ -52,9 +52,9 @@ router.get('/api/checkFriendUpdate/:id', friendController.checkUpdateFriend);
 router.get('/api/getFriend/:id', friendController.getFriend);
 router.get('/api/getRequest/:id', friendController.getRequest);
 //Feedback
-router.get('http://localhost:4000/api/getFeedback/:id',feedbackController.getFeedback);
-router.put('http://localhost:4000/api/updateFeedback/:id',feedbackController.updateFeedback);
-router.post('http://localhost:4000/api/addFirstFeedback/:id',feedbackController.addFirstFeedback);
+router.get('/api/getFeedback/:id',feedbackController.getFeedback);
+router.put('/api/updateFeedback/:id',feedbackController.updateFeedback);
+router.post('/api/addFirstFeedback/:id',feedbackController.addFirstFeedback);
 //NOT IN SWAGGER
 //FriendRequest
 router.get('/api/acceptFriendRequest/:id/:friendID', friendController.acceptFriendRequest);
@@ -76,7 +76,7 @@ router.get("/test", async (request, res) => {
         const pool = await poolPromise
         const result = await pool.request()
             .query(`
-            SELECT * FROM Player;
+            select activated from [dbo].[Player_Feedback] WHERE playerID = 1;
             `)
         res.send(result.recordset)
     } catch (error) {

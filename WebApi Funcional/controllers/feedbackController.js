@@ -8,8 +8,13 @@ class MainController {
       const result = await pool
         .request()
         .input('playerID', sql.Int, req.params.id)
-        .query('select activated from [dbo].[Players_Feedback] WHERE playerID = @playerID');
+        .query('select activated from [dbo].[Player_Feedback] WHERE playerID = @playerID');
+
       res.json(result.recordset);
+      /*if (result.recordset.Count == 0){
+        console.log("si jala el null bro");
+      }
+      console.log(result.recordset);*/
     } catch (error) {
       console.log('FALLO EL BUSCAR WEY');
       res.status(500);
