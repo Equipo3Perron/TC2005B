@@ -54,7 +54,7 @@ router.get('/api/getRequest/:id', friendController.getRequest);
 //Feedback
 router.get('/api/getFeedback/:id',feedbackController.getFeedback);
 router.put('/api/updateFeedback/:id',feedbackController.updateFeedback);
-router.post('/api/addFirstFeedback/:id',feedbackController.addFirstFeedback);
+router.put('/api/addFirstFeedback/:id',feedbackController.addFirstFeedback);
 //NOT IN SWAGGER
 //FriendRequest
 router.get('/api/acceptFriendRequest/:id/:friendID', friendController.acceptFriendRequest);

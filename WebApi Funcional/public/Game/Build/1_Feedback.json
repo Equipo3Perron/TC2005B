@@ -1,0 +1,16 @@
+{
+"companyName": "DefaultCompany",
+"productName": "Ternium Game Development",
+"productVersion": "0.1",
+"dataUrl": "1_Feedback.data.unityweb",
+"wasmCodeUrl": "1_Feedback.wasm.code.unityweb",
+"wasmFrameworkUrl": "1_Feedback.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.4.21f1"
+}

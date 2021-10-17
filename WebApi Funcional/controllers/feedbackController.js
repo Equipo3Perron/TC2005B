@@ -11,10 +11,8 @@ class MainController {
         .query('select activated from [dbo].[Player_Feedback] WHERE playerID = @playerID');
 
       res.json(result.recordset);
-      /*if (result.recordset.Count == 0){
-        console.log("si jala el null bro");
-      }
-      console.log(result.recordset);*/
+
+      console.log(result.recordset);
     } catch (error) {
       console.log('FALLO EL BUSCAR WEY');
       res.status(500);
@@ -26,13 +24,19 @@ class MainController {
         const pool = await poolPromise;
         const result = await pool
         .request()
-        .input('playerID', sql.Int, req.body.id)
+        .input('playerID', sql.Int, req.params.id)
         .input('furnaceFeedback', sql.Bit, req.body.furnaceFeedback)
         .input('energyFeedback', sql.Bit, req.body.energyFeedback)
         .input('friendFeedback', sql.Bit, req.body.friendFeedback)
         .query(
           'EXECUTE SPAddFeedback @playerID, @furnaceFeedback, @energyFeedback, @friendFeedback'
         );
+      console.log("EL req.body");
+      console.log(req.body);
+      console.log("EL id");
+      console.log(req.body.id);
+      console.log("EL IDPlayer");
+      console.log(req.body.IDPlayer);
       res.json(result);
     } catch (error) {
       console.log(error);
@@ -46,13 +50,14 @@ class MainController {
       const pool = await poolPromise;
       const result = await pool
         .request()
-        .input('playerID', sql.Int, req.body.id)
+        .input('playerID', sql.Int, req.params.id)
         .input('furnaceFeedback', sql.Bit, req.body.furnaceFeedback)
         .input('energyFeedback', sql.Bit, req.body.energyFeedback)
         .input('friendFeedback', sql.Bit, req.body.friendFeedback)
         .query(
           'EXECUTE SPUpdateFeedback @playerID, @furnaceFeedback, @energyFeedback, @friendFeedback'
         );
+        console.log(req.body);
         res.json(result);
        
     } catch (error) {
