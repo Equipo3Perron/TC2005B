@@ -14,6 +14,7 @@ const tradeController = require('../controllers/tradeController');
 const friendController = require('../controllers/friendController');
 const controller = require('../controllers/playerController');
 const statisticController = require('../controllers/statisticController');
+const feedbackController = require('../controllers/feedbackController');
 
 
 const router = express.Router();
@@ -50,6 +51,10 @@ router.put('/api/addSetting', settingController.addSetting);
 router.get('/api/checkFriendUpdate/:id', friendController.checkUpdateFriend);
 router.get('/api/getFriend/:id', friendController.getFriend);
 router.get('/api/getRequest/:id', friendController.getRequest);
+//Feedback
+router.get('http://localhost:4000/api/getFeedback/:id',feedbackController.getFeedback);
+router.put('http://localhost:4000/api/updateFeedback/:id',feedbackController.updateFeedback);
+router.post('http://localhost:4000/api/addFirstFeedback/:id',feedbackController.addFirstFeedback);
 //NOT IN SWAGGER
 //FriendRequest
 router.get('/api/acceptFriendRequest/:id/:friendID', friendController.acceptFriendRequest);
