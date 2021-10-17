@@ -78,7 +78,12 @@ router.get("/test", async (request, res) => {
             .query(`
             select activated from [dbo].[Player_Feedback] WHERE playerID = 1;
             `)
+        console.log(result.Count);
         res.send(result.recordset)
+        console.log(result.Count);
+        if (result.Count == null){
+            console.log("si jala el null bro");
+        }
     } catch (error) {
         console.log(error)
         res.status(500)
