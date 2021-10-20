@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="videoPlayerStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Terninside Video</title>
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img class="logo" src="images/logo/ternium logo.png" alt="Logo Ternium">
+        </a>
+        <ul class="menu">
+            <li><a href="juego.html">JUEGO</li>
+            <li><a href="tutoriales.html">TUTORIALES</li>
+            <li><a href="progreso.html">PROGRESO</a></li>
+        </ul>
+    </header>
+    <div class="container">
+        <div class=vidTitle>
+            <span id="videoTitle">Tutorial</span>
+        </div>
+        <div class="container2">
+            <div class="c-video">
+                <video id="video" src="images/video.mp4" controls></video>
+                <div id="videoButtons">
+                    <button id="btnPrev">Anterior</button>
+                    <button id="btnNext">Siguiente</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="videoPlayer.js"></script>
+
+</body>
+
+</html>
