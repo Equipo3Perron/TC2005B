@@ -11,7 +11,7 @@ class MainController {
         .query('select activated from [dbo].[Player_Feedback] WHERE playerID = @playerID');
 
       res.json(result.recordset);
-
+      console.log("getfeedback");
       console.log(result.recordset);
     } catch (error) {
       console.log('FALLO EL BUSCAR WEY');
@@ -57,6 +57,7 @@ class MainController {
         .query(
           'EXECUTE SPUpdateFeedback @playerID, @furnaceFeedback, @energyFeedback, @friendFeedback'
         );
+        console.log("EL REQ.BODY DE ACTUALIZAR");
         console.log(req.body);
         res.json(result);
        
