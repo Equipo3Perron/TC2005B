@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../../assets/img/fondos/fondo\ juego.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: block;
+    font-family: Roboto;
+}
+
+.logo {
+    background-color: white;
+    border: 2px solid white; 
+}
+
+.menu-wrapper {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 1rem;
+    margin: 0 12.5%;
+}
+
+#navigation {
+    display: flex;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#navigation li {
+    margin: 1.5rem 1rem;
+    padding: .6rem 1rem;
+    border-radius: 15%/40%;
+    background-color: rgba(255, 51, 0, 0.89);
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color:white;
+    text-decoration: none;
+}
+
+.webgl-content{
+    margin: 9%;
+    margin-top: 15%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5%;
+    border-radius: 2%/2%;
+}
+
+.row{
+    margin-top: 17.5%;
+    display: grid;
+}
+
+.title{
+    color: white;
+}
+
+.control{
+    display: flex;
+    margin: 30% 30% 0% 10%;
+    justify-content: space-between;
+}

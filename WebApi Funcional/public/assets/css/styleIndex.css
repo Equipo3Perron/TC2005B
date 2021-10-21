@@ -36,6 +36,7 @@
     transform: scale(1.1) translateX(0px);
     background-color: white;
     margin-bottom: 1%;
+    border: 2px solid white;
 }
 
 .menu {
@@ -82,6 +83,7 @@ a:hover {
 
 .titulo{
     position: relative;
+    display: flex;
     /* top: 24vh;
     left: 11vw; */
     top: 10%;
@@ -93,7 +95,7 @@ a:hover {
 h1 {
     position: relative;
     top: 120%;
-    left: 110%;
+    left: 2vw;
     color: rgba(255, 255, 255, 0.8);
     font-size: 7em;
 }
@@ -109,7 +111,8 @@ h1 {
     position: relative;
     left: -10px;
     z-index: 2;
-    background: rgba(240, 141, 11, 0.44);
+    /* background: rgba(240, 141, 11, 0.44); */
+    background: rgba(255, 173, 0, 0.9);
     width: 90%;
     margin-right: 50px;
     color: white;
@@ -160,7 +163,6 @@ h1 {
 .login_part_form_iner h3{
     font-size: 2.5em;
     padding-top: 5%;
-    padding-bottom: 6%;
 }
 
 .form-control{
