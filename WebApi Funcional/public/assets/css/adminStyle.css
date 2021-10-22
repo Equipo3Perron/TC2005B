@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../../assets/img/fondos/fondo\ juego.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: block;
+    font-family: Roboto;
+}
+
+.menu-wrapper {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 1rem;
+    margin: 0 12.5%;
+}
+
+.logo {
+    height: 40px;
+    background-color: white;
+    border: 1px solid white;
+}
+
+.menu {
+    display: flex;
+    text-decoration: none;
+}
+
+ul {
+    padding-top: 2%;
+    list-style-type: none;
+}
+
+.menu li {
+    margin: 1rem 2rem;
+    padding: .7rem 1.5rem;
+    border-radius: 15%/40%;
+    background-color: rgba(255, 51, 0, 0.89);
+}
+
+a, h1{
+    font-weight: 700;
+    color: white;
+}
+
+a:hover {
+    color:white;
+    text-decoration: none;
+    cursor:pointer;
+}
+
+.col-sm-9, .card{
+    background-color:rgba(0, 0, 0, 0.55);
+    border-radius: 1%/1%;;
+    margin: 3% 12.5%;
+    width: 100%;
+}
+
+.card{
+    margin-top: 0%;
+}
+
+.navbar{
+    width: 40%;
+    margin-top: 3%;
+    background-color: orange;
+    border-radius: 1%/1%
+}
+
+.form-control{
+    margin: 2% 0%;
+}
+
+.navbar .btn{
+    background-color: rgba(255, 51, 0, 0.89);
+    color: white;
+    border-color: white;
+}
+
+.card-body .row .col-sm-9{
+    
+    width: 40%;
+    padding: 5%;
+}

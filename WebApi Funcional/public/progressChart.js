@@ -6,8 +6,8 @@ const radioContratos = document.getElementById('flexRadioContratos');
 const boton = document.getElementById('boton');
 const input = document.getElementById('datepicker');
 
-const url = window.location.href;
-const id = url.split('=')[1];
+var url = window.location.href;
+var id = url.split('=')[1];
 
 boton.addEventListener('click', () => {
   var array = [];

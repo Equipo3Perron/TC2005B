@@ -11,17 +11,17 @@ body {
     font-family: Roboto;
 }
 
-.logo {
-    background-color: white;
-    border: 2px solid white; 
-}
-
 .menu-wrapper {
     display: flex;
     justify-content:space-between;
     align-items: center;
     padding: 1rem;
     margin: 0 12.5%;
+}
+
+.logo {
+    background-color: white;
+    border: 2px solid white; 
 }
 
 #navigation {
@@ -34,21 +34,17 @@ ul {
 }
 
 #navigation li {
-    margin: 1.5rem 1rem;
-    padding: .6rem 1rem;
+    margin: 1rem 2rem;
+    padding: .7rem 1.5rem;
     border-radius: 15%/40%;
     background-color: rgba(255, 51, 0, 0.89);
     font-weight: 700;
-}
-
-a {
-    text-decoration: none;
     color: white;
+    font-weight: bold;
 }
 
 a:hover {
-    color:white;
-    text-decoration: none;
+    cursor: pointer;
 }
 
 .webgl-content{
